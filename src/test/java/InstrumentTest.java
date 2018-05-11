@@ -15,7 +15,7 @@ public class InstrumentTest {
     @Before
     public void setUp() throws Exception {
         guitar = new Guitar("wood", "blue", InstrumentType.STRING, "Fender", 200.00, 250.00, 6);
-        piano = new Piano("wood", "brown", InstrumentType.KEYBOARD, "Yamaha", 900.00, 1200.00);
+        piano = new Piano("wood", "brown", InstrumentType.KEYBOARD, "Yamaha", 900.00, 1200.00, 88);
     }
 
     @Test
