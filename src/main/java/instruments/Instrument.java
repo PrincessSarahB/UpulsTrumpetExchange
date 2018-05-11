@@ -1,8 +1,9 @@
 package instruments;
 
 import interfaces.Playable;
+import interfaces.Sellable;
 
-public abstract class Instrument implements Playable {
+public abstract class Instrument implements Playable, Sellable {
 
     private String material;
     private String colour;
@@ -42,6 +43,10 @@ public abstract class Instrument implements Playable {
 
     public double getSellPrice() {
         return sellPrice;
+    }
+
+    public double calculateMarkup(){
+        return this.sellPrice - this.buyPrice;
     }
 
 

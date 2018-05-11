@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface Sellable {
-    double calculateMarkuo();
+    double calculateMarkup();
 }

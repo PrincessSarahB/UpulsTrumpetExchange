@@ -48,6 +48,11 @@ public class InstrumentTest {
         assertEquals(250.00, guitar.getSellPrice(), 0.01);
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(300.00, piano.calculateMarkup(), 0.01);
+    }
+
 
 }
 
