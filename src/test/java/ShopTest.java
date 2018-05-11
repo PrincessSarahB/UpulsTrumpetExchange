@@ -35,4 +35,12 @@ public class ShopTest {
         shop.addStock(sheetMusic);
         assertEquals(2, shop.stockCount());
     }
+
+    @Test
+    public void canRemoveStockFromShop(){
+        shop.addStock(piano);
+        shop.addStock(sheetMusic);
+        shop.removeStock(piano);
+        assertEquals(1, shop.stockCount());
+    }
 }
