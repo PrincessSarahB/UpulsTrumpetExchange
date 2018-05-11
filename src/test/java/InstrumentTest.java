@@ -33,6 +33,11 @@ public class InstrumentTest {
         assertEquals(InstrumentType.STRING, guitar.getInstrumentType());
     }
 
+    @Test
+    public void hasMake(){
+        assertEquals("Yamaha", piano.getMake());
+    }
+
 
 }
 
