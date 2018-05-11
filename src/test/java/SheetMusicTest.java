@@ -12,7 +12,7 @@ public class SheetMusicTest {
 
     @Before
     public void before() {
-        sheetMusic = new SheetMusic(5.00, 7.00, AccessoryType.SHEETMUSIC);
+        sheetMusic = new SheetMusic(5.00, 7.00, AccessoryType.SHEETMUSIC, "Lennon and McCartney");
 
     }
 
@@ -29,6 +29,11 @@ public class SheetMusicTest {
     @Test
     public void canGetAccessoryType(){
         assertEquals(AccessoryType.SHEETMUSIC, sheetMusic.getAccessoryType());
+    }
+
+    @Test
+    public void canGetComposer(){
+        assertEquals("Lennon and McCartney", sheetMusic.getComposer());
     }
 
     @Test
