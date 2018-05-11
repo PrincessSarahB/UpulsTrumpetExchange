@@ -28,6 +28,11 @@ public class InstrumentTest {
         assertEquals("blue", guitar.getColour());
     }
 
+    @Test
+    public void hasInstrumentType(){
+        assertEquals(InstrumentType.STRING, guitar.getInstrumentType());
+    }
+
 
 }
 
