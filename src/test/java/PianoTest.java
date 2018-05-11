@@ -19,7 +19,10 @@ public class PianoTest {
         assertEquals(88, piano.getNumberOfStrings());
     }
 
-
+    @Test
+    public void canPlay(){
+        assertEquals("plinky plonky", piano.play());
+    }
 
 
 }
