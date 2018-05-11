@@ -24,4 +24,9 @@ public class GuitarStringTest {
         assertEquals(6.00, guitarString.getSellPrice(), 0.01);
     }
 
+    @Test
+    public void hasBrand(){
+        assertEquals("Ernie Ball", guitarString.getBrand());
+    }
+
 }
