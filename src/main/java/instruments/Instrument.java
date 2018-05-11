@@ -2,7 +2,7 @@ package instruments;
 
 import interfaces.Playable;
 
-public abstract class Instrument {
+public abstract class Instrument implements Playable {
 
     private String material;
     private String colour;
