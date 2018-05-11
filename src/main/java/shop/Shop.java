@@ -23,4 +23,13 @@ public class Shop {
     public void removeStock(Sellable item) {
         this.stock.remove(item);
     }
+
+
+    public double calculateTotalProfit() {
+        double total = 0;
+        for(Sellable item : this.stock){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }

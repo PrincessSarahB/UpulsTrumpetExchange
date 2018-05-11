@@ -43,4 +43,11 @@ public class ShopTest {
         shop.removeStock(piano);
         assertEquals(1, shop.stockCount());
     }
+
+    @Test
+    public void canCalculateTotalProfit(){
+        shop.addStock(piano);
+        shop.addStock(sheetMusic);
+        assertEquals(303.00, shop.calculateTotalProfit(), 0.01);
+    }
 }
