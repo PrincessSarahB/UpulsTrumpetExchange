@@ -1,5 +1,9 @@
 import accessories.Accessory;
+import accessories.AccessoryType;
+import accessories.SheetMusic;
 import instruments.Instrument;
+import instruments.InstrumentType;
+import instruments.Piano;
 import org.junit.Before;
 import org.junit.Test;
 import shop.Shop;
@@ -14,6 +18,8 @@ public class ShopTest {
 
     @Before
     public void before() {
+        piano = new Piano("wood", "brown", InstrumentType.KEYBOARD, "Yamaha", 900.00, 1200.00, 88);
+        sheetMusic = new SheetMusic(4.00, 7.00, AccessoryType.SHEETMUSIC, "John Williams");
         shop = new Shop();
 
     }
@@ -25,6 +31,8 @@ public class ShopTest {
 
     @Test
     public void canAddStockToShop(){
-
+        shop.addStock(piano);
+        shop.addStock(sheetMusic);
+        assertEquals(2, shop.stockCount());
     }
 }

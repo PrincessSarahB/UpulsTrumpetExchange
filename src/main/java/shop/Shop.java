@@ -1,5 +1,6 @@
 package shop;
 
+import instruments.Instrument;
 import interfaces.Sellable;
 
 import java.util.ArrayList;
@@ -13,5 +14,9 @@ public class Shop {
 
     public int stockCount() {
         return stock.size();
+    }
+
+    public void addStock(Sellable item) {
+        this.stock.add(item);
     }
 }
