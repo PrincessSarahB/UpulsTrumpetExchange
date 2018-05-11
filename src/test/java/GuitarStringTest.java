@@ -29,4 +29,9 @@ public class GuitarStringTest {
         assertEquals("Ernie Ball", guitarString.getBrand());
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(1.00, guitarString.calculateMarkup(), 0.01);
+    }
+
 }
