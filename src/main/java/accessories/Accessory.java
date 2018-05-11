@@ -1,6 +1,8 @@
 package accessories;
 
-public abstract class Accessory {
+import interfaces.Sellable;
+
+public abstract class Accessory implements Sellable {
 
     private double buyPrice;
     private double sellPrice;
@@ -16,5 +18,9 @@ public abstract class Accessory {
 
     public double getSellPrice() {
         return sellPrice;
+    }
+
+    public double calculateMarkup(){
+        return this.sellPrice - this.buyPrice;
     }
 }
