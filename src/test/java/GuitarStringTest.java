@@ -31,6 +31,9 @@ public class GuitarStringTest {
     }
 
     @Test
+    public void hasAccessoryType(){
+        assertEquals(AccessoryType.GUITARSTRING, guitarString.getAccessoryType());
+    }
 
     @Test
     public void canCalculateMarkup(){
