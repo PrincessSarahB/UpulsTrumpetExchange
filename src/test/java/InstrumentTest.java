@@ -43,6 +43,11 @@ public class InstrumentTest {
         assertEquals(200.00, guitar.getBuyPrice(), 0.01);
     }
 
+    @Test
+    public void hasSellPrice(){
+        assertEquals(250.00, guitar.getSellPrice(), 0.01);
+    }
+
 
 }
 
