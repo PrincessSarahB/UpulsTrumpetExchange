@@ -1,3 +1,4 @@
+import accessories.AccessoryType;
 import accessories.GuitarString;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class GuitarStringTest {
 
     @Before
     public void before() {
-        guitarString = new GuitarString(5.00, 6.00, "Ernie Ball");
+        guitarString = new GuitarString(5.00, 6.00, AccessoryType.GUITARSTRING, "Ernie Ball");
 
     }
 
@@ -28,6 +29,8 @@ public class GuitarStringTest {
     public void hasBrand(){
         assertEquals("Ernie Ball", guitarString.getBrand());
     }
+
+    @Test
 
     @Test
     public void canCalculateMarkup(){

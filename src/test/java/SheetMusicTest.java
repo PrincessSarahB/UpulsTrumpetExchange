@@ -1,4 +1,6 @@
+import accessories.AccessoryType;
 import accessories.SheetMusic;
+import com.sun.javafx.webkit.Accessor;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,7 +12,7 @@ public class SheetMusicTest {
 
     @Before
     public void before() {
-        sheetMusic = new SheetMusic(5.00, 7.00);
+        sheetMusic = new SheetMusic(5.00, 7.00, AccessoryType.SHEETMUSIC);
 
     }
 
@@ -22,6 +24,11 @@ public class SheetMusicTest {
     @Test
     public void hasSellPrice() {
         assertEquals(7.00, sheetMusic.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void canGetAccessoryType(){
+        assertEquals(AccessoryType.SHEETMUSIC, sheetMusic.getAccessoryType());
     }
 
     @Test

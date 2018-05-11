@@ -6,10 +6,12 @@ public abstract class Accessory implements Sellable {
 
     private double buyPrice;
     private double sellPrice;
+    private AccessoryType accessoryType;
 
-    public Accessory(double buyPrice, double sellPrice) {
+    public Accessory(double buyPrice, double sellPrice, AccessoryType accessoryType) {
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
+        this.accessoryType = accessoryType;
     }
 
     public double getBuyPrice() {
@@ -18,6 +20,10 @@ public abstract class Accessory implements Sellable {
 
     public double getSellPrice() {
         return sellPrice;
+    }
+
+    public AccessoryType getAccessoryType() {
+        return accessoryType;
     }
 
     public double calculateMarkup(){
