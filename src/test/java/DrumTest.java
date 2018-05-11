@@ -18,4 +18,9 @@ public class DrumTest {
     public void hasCymbals(){
         assertEquals("Hi-hat", drum.getCymbals());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Trrrrrrrr boom!", drum.play());
+    }
 }
