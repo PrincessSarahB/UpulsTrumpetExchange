@@ -38,6 +38,11 @@ public class InstrumentTest {
         assertEquals("Yamaha", piano.getMake());
     }
 
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(200.00, guitar.getBuyPrice(), 0.01);
+    }
+
 
 }
 
